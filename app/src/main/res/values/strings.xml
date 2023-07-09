@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text">text</string>
+    <string-array name="speed_menu">
+        <item>Km/h</item>
+        <item>Meter/s</item>
+        <item>Miles/h</item>
+        <item>Miles/m</item>
+        <item>Miles/s</item>
+        <item>Feet/h</item>
+        <item>Feet/m</item>
+        <item>Feet/s</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menuM" android:title="Meter"/>
+<item android:id="@+id/menuKm" android:title="Kilometer"/>
+<item android:id="@+id/menuIn" android:title="Inch"/>
+<item android:id="@+id/menuCm" android:title="Celimeter"/>
+<item android:id="@+id/menuMm" android:title="Milimeter"/>
+<item android:id="@+id/menuMi" android:title="Mile"/>
+<item android:id="@+id/menuYd" android:title="Yard"/>
+<item android:id="@+id/menuFt" android:title="Foot"/>
+<item android:id="@+id/menuNmi" android:title="Nautical Mile"/>
+<item android:id="@+id/menuPc" android:title="parsec"/>
+</menu>

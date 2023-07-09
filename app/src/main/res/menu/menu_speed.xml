@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/kmh" android:title="Km/h"/>
+    <item android:id="@+id/ms" android:title="Meter/s"/>
+    <item android:id="@+id/milesh" android:title="Miles/h"/>
+    <item android:id="@+id/milesm" android:title="Miles/m"/>
+    <item android:id="@+id/milesS" android:title="Miles/s"/>
+    <item android:id="@+id/feeth" android:title="Feet/h"/>
+    <item android:id="@+id/feetm" android:title="Feet/m"/>
+    <item android:id="@+id/feets" android:title="Feet/s"/>
+
+</menu>

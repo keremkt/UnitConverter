@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/weight"
+        android:title="weight"
+        android:icon="@drawable/kg_dark"
+        app:exb_color="#673AB7" />
+
+    <item
+        android:id="@+id/height"
+        android:title="height"
+        android:icon="@drawable/kg_dark"
+        app:exb_color="#8BC34A" />
+    <item
+        android:id="@+id/volume"
+        android:title="volume"
+        android:icon="@drawable/kg_dark"
+        app:exb_color="#2196F3" />
+    <item
+        android:id="@+id/temperature"
+        android:title="temperature"
+        android:icon="@drawable/kg_dark"
+        app:exb_color="#FF5722" />
+
+</menu>
