@@ -13,6 +13,28 @@
         <item>Feet/h</item>
         <item>Feet/m</item>
         <item>Feet/s</item>
-
+    </string-array>
+    <string-array name="length_menu">
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Inch</item>
+        <item>Celimeter</item>
+        <item>Milimeter</item>
+        <item>Mile</item>
+        <item>Yard</item>
+        <item>Foot</item>
+        <item>Nautical Mile</item>
+        <item>parsec</item>
+    </string-array>
+    <string-array name="weight_menu">
+        <item>Kilogram</item>
+        <item>Pound</item>
+        <item>Gram</item>
+        <item>Ton</item>
+    </string-array>
+    <string-array name="temperature_menu">
+        <item>C</item>
+        <item>F</item>
+        <item>K</item>
     </string-array>
 </resources>

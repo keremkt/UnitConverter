@@ -3,5 +3,5 @@
 <item android:id="@+id/menuKg" android:title="Kilogram"/>
 <item android:id="@+id/menuPound" android:title="Pound"/>
 <item android:id="@+id/gram" android:title="gram"/>
-<item android:id="@+id/Tonne" android:title="Tonne"/>
+<item android:id="@+id/Tonne" android:title="Ton"/>
 </menu>
