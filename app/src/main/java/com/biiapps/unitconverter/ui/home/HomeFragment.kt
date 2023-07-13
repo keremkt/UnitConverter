@@ -104,6 +104,7 @@ class HomeFragment : Fragment() {
             adapter!!.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
             binding.spinner1.adapter = adapter
+            binding.spinner2.adapter = adapter
 
         }
         binding.ti1.addTextChangedListener(object : TextWatcher {
@@ -119,6 +120,8 @@ class HomeFragment : Fragment() {
                     binding.spinner1.selectedItem.toString(),
                     binding.spinner2.selectedItem.toString()
                 )
+                Log.e("0******1*",i2)
+                binding.ti2.setText(i2)
             }
 
             override fun afterTextChanged(p0: Editable?) {
