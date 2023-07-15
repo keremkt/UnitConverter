@@ -91,7 +91,7 @@
                 android:id="@+id/spinner1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#ff0000"
+                android:backgroundTint="@color/teal_200"
                 android:entries="@array/speed_menu"
                 android:overlapAnchor="false"
                 android:spinnerMode="dropdown"
@@ -144,9 +144,8 @@
                 android:id="@+id/spinner2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#ff0000"
+                android:backgroundTint="@color/teal_200"
                 android:entries="@array/speed_menu"
-
                 android:overlapAnchor="false"
                 android:spinnerMode="dropdown"
                 android:transitionName="s2" />

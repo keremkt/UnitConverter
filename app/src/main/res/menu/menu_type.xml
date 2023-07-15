@@ -3,7 +3,7 @@
     <item
         android:id="@+id/speed"
         android:title="Speed"
-        android:icon="@drawable/kg_dark"
+        android:icon="@drawable/speed_dark"
         app:exb_color="#673AB7" />
     <item
         android:id="@+id/weight"
@@ -14,13 +14,13 @@
     <item
         android:id="@+id/length"
         android:title="Length"
-        android:icon="@drawable/kg_dark"
+        android:icon="@drawable/lenght_dark"
         app:exb_color="#8BC34A" />
 
     <item
         android:id="@+id/temperature"
         android:title="temperature"
-        android:icon="@drawable/kg_dark"
+        android:icon="@drawable/speed_dark"
         app:exb_color="#FF5722" />
 
 </menu>

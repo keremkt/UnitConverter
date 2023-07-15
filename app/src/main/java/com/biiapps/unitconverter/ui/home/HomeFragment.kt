@@ -81,33 +81,32 @@ class HomeFragment : Fragment() {
                 adapter = ArrayAdapter.createFromResource(
                     view.context,
                     R.array.speed_menu,
-                    android.R.layout.simple_spinner_dropdown_item
+                    R.layout.spinner_item2
                 )
             }
             if (currMenu.value.toString().lowercase(Locale.ROOT) == "weight") {
                 adapter = ArrayAdapter.createFromResource(
                     view.context,
                     R.array.weight_menu,
-                    android.R.layout.simple_spinner_dropdown_item
+                    R.layout.spinner_item2
                 )
             }
             if (currMenu.value.toString().lowercase(Locale.ROOT) == "length") {
                 adapter = ArrayAdapter.createFromResource(
                     view.context,
                     R.array.length_menu,
-                    android.R.layout.simple_spinner_dropdown_item
+                    R.layout.spinner_item2
                 )
             }
             if (currMenu.value.toString().lowercase(Locale.ROOT) == "temperature") {
                 adapter = ArrayAdapter.createFromResource(
                     view.context,
                     R.array.temperature_menu,
-                    android.R.layout.simple_spinner_dropdown_item
+                    R.layout.spinner_item2
                 )
             }
-
             // Specify the layout to use when the list of choices appears
-            adapter!!.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            adapter!!.setDropDownViewResource(R.layout.spinner_item)
             // Apply the adapter to the spinner
             binding.spinner1.adapter = adapter
             binding.spinner2.adapter = adapter
