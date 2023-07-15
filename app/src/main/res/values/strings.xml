@@ -18,13 +18,10 @@
         <item>Meter</item>
         <item>Kilometer</item>
         <item>Inch</item>
-        <item>Celimeter</item>
         <item>Milimeter</item>
         <item>Mile</item>
         <item>Yard</item>
-        <item>Foot</item>
         <item>Nautical Mile</item>
-        <item>parsec</item>
     </string-array>
     <string-array name="weight_menu">
         <item>Kilogram</item>

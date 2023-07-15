@@ -1,5 +1,6 @@
 package com.biiapps.unitconverter.ui.home
 
+import android.database.DatabaseUtils
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
@@ -12,11 +13,13 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.core.view.get
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.biiapps.unitconverter.R
 import com.biiapps.unitconverter.databinding.FragmentHomeBinding
+
 import github.com.st235.lib_expandablebottombar.MenuItem
 import github.com.st235.lib_expandablebottombar.MenuItemDescriptor
 import github.com.st235.lib_expandablebottombar.OnItemClickListener
@@ -29,8 +32,8 @@ class HomeFragment : Fragment() {
     var currMenu: MutableLiveData<String> = MutableLiveData("speed")
     var input: MutableLiveData<String> = MutableLiveData("")
     var homeViewModel: HomeViewModel? = null
-     var i1: String =""
-     var i2: String=""
+    var i1: String = ""
+    var i2: String = ""
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -40,13 +43,14 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this)[HomeViewModel::class.java]
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        //DataBindingUtil.setContentView(requireActivity(), R.layout.fragment_home)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel?.text?.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-
+        /*   val textView: TextView = binding.textHome
+           homeViewModel?.text?.observe(viewLifecycleOwner) {
+               textView.text = it
+           }
+          */
         return root
     }
 
@@ -54,6 +58,8 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val bottomBar = binding.expandableBar
         bottomBar.onItemSelectedListener = { v, m, b ->
+            binding.ti1.setText("")
+            binding.ti2.setText("")
             homeViewModel?.currMenu = m.text.toString()
             currMenu.value = m.text.toString()
             Log.e("homeviewmodel", homeViewModel!!.currMenu)
@@ -120,7 +126,7 @@ class HomeFragment : Fragment() {
                     binding.spinner1.selectedItem.toString(),
                     binding.spinner2.selectedItem.toString()
                 )
-                Log.e("0******1*",i2)
+                Log.e("0******1*", i2)
                 binding.ti2.setText(i2)
             }
 
@@ -128,13 +134,18 @@ class HomeFragment : Fragment() {
             }
         }
         )
-        binding.spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+        binding.spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Log.e("spinner1", "nothing selected")
 
             }
 
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 Log.e("spinner1", " selected")
                 i2 = homeViewModel!!.showResult(
                     i1,
@@ -142,14 +153,21 @@ class HomeFragment : Fragment() {
                     binding.spinner1.selectedItem.toString(),
                     binding.spinner2.selectedItem.toString()
                 )
+                binding.ti2.setText(i2)
+
             }
         }
-        binding.spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+        binding.spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 Log.e("spinner2", "nothing selected")
             }
 
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 Log.e("spinner2", "item selected")
                 i2 = homeViewModel!!.showResult(
                     i1,
@@ -157,6 +175,8 @@ class HomeFragment : Fragment() {
                     binding.spinner1.selectedItem.toString(),
                     binding.spinner2.selectedItem.toString()
                 )
+                binding.ti2.setText(i2)
+
             }
         }
     }
