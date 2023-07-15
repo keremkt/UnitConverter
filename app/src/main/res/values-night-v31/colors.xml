@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="text">text</string>
-
+    <color name="orange_400">#F4511E</color>
 </resources>
